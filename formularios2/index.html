@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meuForm</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .label {
+            display: block;
+        }
+
+        .select {
+            width: 100%;
+            padding: 8px;
+        }
+
+        .line-form {
+            padding: 1rem 10px;
+        }
+
+        .cbc-form {
+            background-color: rebeccapurple;
+            padding-left: 1rem;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="cbc-form">
+        <h1>Formulário</h1>
+    </div>
+    <form>
+        <div class="line-form">
+            <label for="capital">Qual a capital do Brasil?</label>
+            <div>
+                <input type="radio" name="capital" id="brasilia">
+                <label for="brasilia">Brasília</label>
+            </div>
+            <div>
+                <input type="radio" name="capital" id="porto-velho">
+                <label for="porto-velho">Porto Velho</label>
+            </div>
+            <div>
+                <input type="radio" name="capital" id="cuiaba">
+                <label for="cuiaba">Cuiabá</label>
+            </div>
+            <div>
+                <input type="radio" name="capital" id="sao-paulo">
+                <label for="sao-paulo">São Paulo</label>
+            </div>
+        </div>
+        <div >
+            <label for="lanche">Monte seu lanche:</label>
+            <div>
+                <input type="checkbox" name="lanche" id="pão">
+                <label for="pão">Pão</label>
+            </div>
+            <div>
+                <input type="checkbox" name="lanche" id="presunto">
+                <label for="presunto">Presunto</label>
+            </div>
+            <div>
+                <input type="checkbox" name="lanche" id="queijo">
+                <label for="queijo">Queijo</label>
+            </div>
+            <div>
+                <input type="checkbox" name="lanche" id="tomate">
+                <label for="tomate">Tomate</label>
+            </div>
+        </div>
+        <div class="line-form">
+            <label for="estado" class="label">Estado</label>
+            <select id="estado" class="select">
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="AC">Acre</option>
+                <option value="AM">Amazonas</option>
+                <option value="AC">Amapá</option>
+                <option value="PA">Pará</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
